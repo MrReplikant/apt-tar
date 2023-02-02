@@ -1,10 +1,10 @@
 # Apt-Tar: The Spiritual Successor to apt-zip!
-IMPORTANT WARNINGS AND NOTES:
+ACKNOWLEDGEMENT:
 This work is based on the work of mishalew1, credit goes to them for laying the groundwork of this effort. 
 
 WARNING: this program currently reacts adversely to multi-arch systems, and is single-arch only. (Multi-Arch support is in the pipeline!) So you will need amd64 for serving amd64 machines, i386 for i386, etc.
 
-## What makes apt-tar unique?
+## What makes Apt-Tar unique?
 It doesn't just pull dependencies your own machine still needs, it retrieves them recursively. This means you can install this program regardless of whether the target machine has all the same packages or not. No need to use VM's to get all the dependencies! Apt-Tar also does one thing that Cube-Get, and Apt-Offline, and even it's spiritual predecessor Apt-Zip cannot: it can use packages from local repositories! This includes packages obtained via apt-cdrom, and packages from a local mirror created by apt-mirror, or whatever program you use to make your own local repos.
 
 ## How to install Apt-Tar 
