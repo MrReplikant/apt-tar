@@ -1,5 +1,5 @@
 # Apt-Tar: The Spiritual Successor to apt-zip!
-IMOPRTANT WARNINGS AND NOTES:
+IMPORTANT WARNINGS AND NOTES:
 This work is based on the work of mishalew1, credit goes to them for laying the groundwork of this effort. 
 
 WARNING: this program currently reacts adversely to multi-arch systems, and is single-arch only. (Multi-Arch support is in the pipeline!) So you will need amd64 for serving amd64 machines, i386 for i386, etc.
