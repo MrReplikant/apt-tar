@@ -1,4 +1,7 @@
-# Apt-Tar: The Spiritual Successor to apt-zip!
+# TESTING BRANCH
+This branch is the rest repo where we are working on support for multi-arch installations!
+
+## Apt-Tar: The Spiritual Successor to apt-zip!
 ACKNOWLEDGEMENT:
 This work is based on the work of mishalew1, credit goes to them for laying the groundwork of this effort. 
 
@@ -19,7 +22,7 @@ sudo ./install-apt-tar.sh
 Voila, installation complete!
 
 ## How to use Apt-Tar
-example: sudo apt-tar inkscape
+example: sudo apt-tar https://github.com/MrReplikant/apt-tarinkscape
 
 The above will pull all of the dependencies, and put them all in the file "debs.tar.gz" , which can then be transferred to another machine by any media you wish!
 
