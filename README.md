@@ -11,7 +11,9 @@ It doesn't just pull dependencies your own machine still needs, it retrieves the
 Use the following steps: 
 
 git clone https://github.com/MrReplikant/apt-tar
+
 cd apt-tar
+
 sudo ./install-apt-tar.sh
 
 Voila, installation complete!
