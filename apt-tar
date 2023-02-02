@@ -7,8 +7,7 @@ Finaly compresses the entire directory into a pkg_index to be moved to another s
 
 # Variables
 DIR=$PWD/debs
-DARCH=$1
-package_list=(${@:2})
+package_list=($*)
 
 
 isRoot() {
@@ -60,9 +59,9 @@ download_dependencies(){
 
 create_pkg_index(){
 	pkg_index=Packages.gz
-	dpkg-scanpackages -a $DARCH . | gzip -c > $DIR/dists/local/main/binary-$DARCH/$pkg_index
-        dpkg-scanpackages -a $DARCH . > Packages
-        cp Packages $DIR/dists/local/main/binary-$DARCH/Packages
+	dpkg-scanpackages -a $ARCH . | gzip -c > $DIR/dists/local/main/binary-$ARCH/$pkg_index
+        dpkg-scanpackages -a $ARCH . > Packages
+        cp Packages $DIR/dists/local/main/binary-$ARCH/Packages
 }
 
 copy_dpkg_script(){
