@@ -6,7 +6,7 @@ Finaly compresses the entire directory into a pkg_index to be moved to another s
 '
 
 # Variables
-DIR=$PWD/debs
+DIR=$PWD/debs-$(dpkg --print-architecture)
 package_list=($*)
 DARCH$(dpkg --print-architecture)
 
@@ -34,7 +34,7 @@ find_dependencies(){
 }
 
 copypackagestofile(){
-echo  "${package_list[@]}" > packages.txt | cp packages.txt /etc/apt-tar/packages
+echo  "${package_list[@]}" > packages.txt | cp packages.txt /ark/apt-tar/packages
 }
 
 make_directories(){
@@ -65,8 +65,8 @@ create_pkg_index(){
 }
 
 copy_dpkg_script(){
-        cp /etc/apt-tar/aptscripts/installdebs.sh $PWD/installdebs.sh
-        cp /etc/apt-tar/packages/packages.txt $PWD/packages.txt
+        cp /ark/apt-tar/aptscripts/installdebs.sh $PWD/installdebs.sh
+        cp /ark/apt-tar/packages/packages.txt $PWD/packages.txt
 }
 
 
@@ -85,7 +85,7 @@ verify_things(){
 	du -sh $tarball
         rm -rf ./debs
         rm packages.txt       
-        rm /etc/apt-tar/packages/packages.txt
+        rm /ark/apt-tar/packages/packages.txt
 }
 
 
