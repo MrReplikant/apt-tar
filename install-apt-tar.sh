@@ -9,12 +9,12 @@ isRoot() {
 
 
 install_program(){
-mkdir /etc/apt-tar
-mkdir /etc/apt-tar/backup
-mkdir /etc/apt-tar/aptscripts
-mkdir /etc/apt-tar/packages
+mkdir /ark/apt-tar
+mkdir /ark/apt-tar/backup
+mkdir /ark/apt-tar/aptscripts
+mkdir /ark/apt-tar/packages
 cp apt-tar /usr/bin/apt-tar
-cp installdebs.sh /etc/apt-tar/aptscripts/installdebs.sh
+cp installdebs.sh /ark/apt-tar/aptscripts/installdebs.sh
 }
 
 
