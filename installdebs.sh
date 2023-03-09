@@ -17,7 +17,7 @@ rm /etc/apt/sources.list
 }
 
 create_localrepo(){
-echo deb file:$SCRIPT_DIR local main > local.list
+echo deb [trusted=yes] file:$SCRIPT_DIR local main > local.list
 }
 
 copytosources(){
@@ -29,7 +29,7 @@ apt update --allow-insecure-repositories
 }
 
 install_packages(){
-apt install $(cat packages.txt) -y --allow-unauthenticated 
+apt install $(cat packages.txt) -y 
 }
 
 remove_local(){

@@ -7,9 +7,8 @@ Finaly compresses the entire directory into a pkg_index to be moved to another s
 
 # Variables
 DIR=$PWD/debs
-DARCH=$1
-package_list=(${@:2})
-
+package_list=($*)
+DARCH=$(dpkg --print-architecture)
 
 isRoot() {
 	if [ "$EUID" -ne 0 ]; then
