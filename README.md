@@ -3,7 +3,7 @@ Master
 ACKNOWLEDGEMENT:
 This work is based on the work of mishalew1, credit goes to them for laying the groundwork of this effort. 
 
-WARNING: This program DOES support cross-architecture packages now, and such requires the target arches being enabled on your marchine, but you cannot pull a package from more than one architecture at a time!
+WARNING: This program DOES support serving packages cross-architecture now, and such requires the target arches being enabled on your marchine, but you cannot pull a package from more than one architecture at a time!
 
 ## What makes Apt-Tar unique?
 It doesn't just pull dependencies your own machine still needs, it retrieves them recursively. This means you can install this program regardless of whether the target machine has all the same packages or not. No need to use VM's to get all the dependencies! Apt-Tar also does one thing that Cube-Get, and Apt-Offline, and even it's spiritual predecessor Apt-Zip cannot: it can use packages from local repositories! This includes packages obtained via apt-cdrom, and packages from a local mirror created by apt-mirror, or whatever program you use to make your own local repos.
