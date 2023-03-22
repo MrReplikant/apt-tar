@@ -9,6 +9,8 @@ isRoot() {
 
 
 install_program(){
+chmod +x apt-tar
+chmod +x installdebs.sh
 mkdir /etc/apt-tar
 mkdir /etc/apt-tar/backup
 mkdir /etc/apt-tar/aptscripts
