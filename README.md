@@ -15,6 +15,8 @@ git clone https://github.com/MrReplikant/apt-tar
 
 cd apt-tar
 
+sudo chmod +x install-apt-tar.sh
+
 sudo ./install-apt-tar.sh
 
 Voila, installation complete!
